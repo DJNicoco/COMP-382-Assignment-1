@@ -1,3 +1,9 @@
-\begin{tikzpicture}
-  % DFA diagram will go here
+\begin{tikzpicture}[node distance=2.5cm, on grid, auto]
+  % DFA states
+  \node[state, initial] (q0) {$q_0$};
+  \node[state, right of=q0] (q1) {$q_1$};
+  \node[state, right of=q1] (q2) {$q_2$};
+  \node[state, below of=q1, accepting] (q3) {$q_3$};
+
+  % DFA transitions will be added next
 \end{tikzpicture}
