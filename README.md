@@ -1,40 +1,39 @@
-# Assignment 1 - DFA State Diagram using TikZ and Beamer
+# Assignment 1 – DFA State Diagram using TikZ and Beamer
 
 ## Project Overview
-Demonstrate how to draw a 4-state Deterministic Finite Automaton (DFA) using LaTeX with the TikZ package on one PDF page, ideally using Beamer for presentation.  
-The DFA will follow the correct notation for state diagrams used in the course textbook.  
-The presentation will also demonstrate that the position of a state can be easily moved or edited by modifying the TikZ code.
+In this project, we demonstrate how to draw a 4-state Deterministic Finite Automaton (DFA) using LaTeX with the TikZ package on a single PDF page.  
+The DFA follows the standard state-diagram notation presented in the course textbook and lecture slides.  
+We also demonstrate how the position of states can be easily adjusted by modifying the TikZ code, highlighting the flexibility of programmatic diagram generation.
 
 ---
 
-## Project Status
-This repository has been initialized and project setup is in progress.  
-The DFA design, TikZ diagram, and Beamer presentation will be added in subsequent commits.
+## DFA Description
+The DFA consists of four states: {q0, q1, q2, q3}, over the alphabet {0,1,2,3}.
+
+Each state qi represents the remainder i (mod 4) of the sum of input symbols read so far.
+The start state q0 represents a sum congruent to 0 modulo 4.
+State q3 is the accepting state and represents a sum congruent to 3 modulo 4.
+
+For each input symbol d ∈ {0,1,2,3}, the transition function moves from state qi to state q((i + d) mod 4).
+This ensures that all transitions are deterministic and that the DFA correctly tracks the running sum modulo 4.
 
 ---
 
-## Planned File Structure
-- `dfa_diagram.tex` — TikZ code for the DFA (to be added)
-- `main.tex` — Beamer presentation (to be added)
-- `README.md` — project description and documentation
+## Work Distribution
 
----
-
-## Work Distribution (Planned)
-The work will be divided between both group members, with each contributing code and commits to this repository.
-
-- **Nicole Zino**: DFA design and TikZ diagram implementation  
-- **Inder Nijjar**: Beamer presentation setup and diagram layout edits
+- **Nicole Zino**: Designed the DFA logic and implemented the TikZ diagram  
+- **Inder Nijjar**: Set up the Beamer presentation and handled layout adjustments
 
 ---
 
 ## Tools
 - LaTeX
-- TikZ (automata library)
+- TikZ (automata and positioning libraries)
 - Beamer
 
 ---
 
 ## References
-References and citations will be added as the project progresses, including the course textbook and LaTeX/TikZ documentation.
+Sipser, M. (2013). *Introduction to the Theory of Computation* (3rd ed.). Cengage Learning.
 
+AI tools were used for clarification, formatting assistance, and iterative refinement of explanations.
