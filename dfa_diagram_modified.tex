@@ -6,7 +6,7 @@
          \node[state, above right of=q1] (q2) {$q_2$};
          \node[state, accepting, below left of=q1] (q3) {$q_3$};
     
-         % Transitions which are unchanged
+         %Transitions which are unchanged
          \path[->]
          (q0) edge[loop above] node {0} ()
               edge[above]      node {1} (q1)
