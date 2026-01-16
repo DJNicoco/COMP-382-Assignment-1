@@ -22,18 +22,25 @@ This ensures that all transitions are deterministic and that the DFA correctly t
 ## Work Distribution
 
 - **Nicole Zino**: Designed the DFA logic and implemented the TikZ diagram  
-- **Inder Nijjar**: Set up the Beamer presentation and handled layout adjustments
+- **Inder Nijjar**: Set up the Beamer presentation and modified the position of the states
 
 ---
 
 ## Tools
 - LaTeX
-- TikZ (automata and positioning libraries)
+- TikZ
 - Beamer
+
+---
+
+## Conclusion
+In this project, we demonstrated how to create a correct 4-state DFA using LaTeX and TikZ. We also showed that the layout of the DFA can be easily modified without changing the underlying logic, as demonstrated by the modified diagram layout.
 
 ---
 
 ## References
 Sipser, M. (2013). *Introduction to the Theory of Computation* (3rd ed.). Cengage Learning.
+
+Overleaf. (n.d.). Online LaTeX editor. https://www.overleaf.com
 
 AI tools were used for clarification, formatting assistance, and iterative refinement of explanations.
