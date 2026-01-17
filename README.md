@@ -19,10 +19,16 @@ This ensures that all transitions are deterministic and that the DFA correctly t
 
 ---
 
-## Work Distribution
+## Work/File Distribution
 
-- **Nicole Zino**: Designed the DFA logic and implemented the TikZ diagram  
+- **Nicole Zino**: Designed the DFA logic and implemented the TikZ diagram
+  - `dfa_diagram.tex`
+  - `Topic 4 DFA Diagram.pdf`
+  - `README.md`
 - **Inder Nijjar**: Set up the Beamer presentation and modified the position of the states
+  - `dfa_diagram_modified.tex`
+  - `DFA Modified Diagram.pdf`
+  - `presentation.tex`
 
 ---
 
